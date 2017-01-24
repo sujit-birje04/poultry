@@ -1,0 +1,68 @@
+.frm_error_message{
+	display:none;
+}
+
+.uploaded_img{
+	display: none;	
+	margin: auto 0;
+    max-height: 200px;
+}
+
+#wait_loader{
+	display: none;
+}
+
+.unique_menu{
+	display: none;
+}
+
+.product_tab_hidden{
+	display: none !important;
+}
+
+#prodcut_comman_tab{
+	display: block !important;
+}
+
+.remove_uploaded_img {
+    float: left;
+    background: #DDD;
+    position: absolute;
+    border-radius: 15px;
+    width: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    height: 15px;
+}
+
+.gallary_images.fa {
+    font-size: 50px;
+    background: #EEE;
+    /* width: 100%; */
+    /* line-height: 50px; */
+    margin: 15px 25px;
+    /* float: none !important; */
+}
+
+.lbl_file_gallary{
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.radio-inline .parsley-errors-list {
+    margin-bottom: 0px;
+}
+
+ul#web_myTab{
+    height: auto !important;
+}
+
+.highlight_tab a{
+    color: #F00 !important;
+}
+
+.tbl_settings td{
+    padding: 10px;
+}
