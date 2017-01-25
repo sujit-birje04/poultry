@@ -170,6 +170,32 @@ class LocalDB{
 	** BLOG RELATED
 	**********************************************************************/
 
+	/********************************************************************
+	** Contact 
+	********************************************************************/
+	public static function saveContact($id,$name,$email,$phone,$subject,$message){
+		$mysqli = self::mysqli_configation();
+		$mainObj = Array("status"=>false, "msg"=>"Insertion failed, Please try one more time");		 		 
+		$insert_query = "INSERT INTO `contact_us` (`id`,`name`,`email`,`phone`,`subject`,`message`,`created_on`) 
+					VALUES('$id','$name','$email','$phone','$subject','$message',now());
+				";
+		$result = $mysqli->query($insert_query); 			
+		$id = $mysqli->insert_id;
+		if($result){			
+			$mainObj["data"] = array(
+						'id' => $id,
+						'name' => $name,
+						'email' => $email,
+						'phone' => $phone,
+						'subject' => $subject,
+						'message' => $message,
+						'created_on' => date("Y-m-d h:i:s")
+					);
+			$mainObj['status'] = true;
+			$mainObj['msg'] = 'Inserted successfully';
+		}
+		return $mainObj;
+	}
 
 
 }

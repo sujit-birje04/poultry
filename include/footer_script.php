@@ -16,6 +16,16 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/jquery.easypiechart.js"></script>
     <script src="js/jquery.maps.js"></script>
+    <script src="js/custome.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>         
+    <script src="js/validation/jquery.metadata.js"></script>    
 
     <!-- javascript configuration -->
     <script src="js/config.js"></script>
+    <script>        
+        $(".page_info_msg").fadeOut(15000);
+
+        $(".page_info_msg").hover(function(){
+            $(this).fadeOut(10000);
+        });
+    </script>

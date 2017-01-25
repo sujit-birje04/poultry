@@ -40,24 +40,28 @@
                     </p>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <form class="contact-form">
+                    <form class="contact-form" name="contact_form" id="contact_form" action="controller.php" >
+                        <input type="hidden" name="method" value="save_contact" /> 
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your name">
+                                    <input type="text" name="name" id="name" class="form-control {required:true}" placeholder="Your name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
-                                </div> 
-                                <div class="form-group no-margin-lg">
-                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                    <input type="email" name="email" id="email" class="form-control {required:true, email:true}" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="mobile" id="mobile" class="form-control {required:true, number:true}" placeholder="Your Mobile">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6"> 
                                 <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                                    <input type="text" name="subject" id="subject" class="form-control {required:true}" placeholder="Subject">
                                 </div>
-                                <button type="submit" id="buttonsend" class="btn btn-default btn-block">Send Message</button>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control {required:true}" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="button" frm_id="contact_form" id="frm_submit" class=" frm_submit btn btn-default btn-block">Send Message</button>
                             </div>
                         </div>
                         <span class="loading"></span>

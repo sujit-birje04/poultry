@@ -1,18 +1,24 @@
 <?php
+
+
+	/*
+	$path = $_SERVER['DOCUMENT_ROOT']."/bmutha/bedmutha/";
+	define("BASE_DIR", $path);
+
+	$host = "http://".$_SERVER['HTTP_HOST']."/bmutha/bedmutha/";
+	define("SERVER_PATH", $host);
+	*/
 	
-	//BLUE
-	define('SKIN','skin_00aeef');
-	define('SKIN_CSS','skin-default.css');
+	define('ADMIN_EMAIL', 'sujit.birje@gmail.com');
+	define('ADMIN_NAME', 'Admin');
 
-	//Green
-	//define('SKIN','skin_2ecc71');
-	//define('SKIN_CSS','skin-green.css');
+	define('HR_EMAIL', 'sujit.birje@gmail.com');
+	define('HR_NAME', 'Hr');	
 
-	//Orange
-	//define('SKIN','skin_e67e22');
-	//define('SKIN_CSS','skin-orange.css');
+	define('PUBLIC_EMAIL', 'sujit.birje@gmail.com');
+	define('PUBLIC_NAME', 'Admin');
 
+	define('ENQUIRY_EMAIL', 'sujit.birje@gmail.com');
+	define('ENQUIRY_NAME', 'Admin');
 
-
-	
 ?>

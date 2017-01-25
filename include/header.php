@@ -1,10 +1,12 @@
 <?php
     session_start();
-    if(isset($_REQUEST['status'])){
-        $returnMessage = $_SESSION['status_message']; 
+    //var_dump($_SESSION['new_page_message']);
+    if(isset($_REQUEST['success'])){
+        $returnMessage = json_decode($_SESSION['new_page_message']);
+        //var_dump($returnMessage);
         if(!empty($returnMessage)){  
-            $msg = $returnMessage['message'];
-            $msg_class = ($returnMessage['status'] == true) ? 'msg_success' : 'msg_error';
+            $msg = $returnMessage->msg;
+            $msg_class = ($returnMessage->status == true) ? 'msg_success' : 'msg_error';
         } else {
             $returnMessage = array();
         }
@@ -12,7 +14,7 @@
 ?>
         <div class="<?=$msg_class?> page_info_msg" ><?=$msg?></div>
 <?php     
-        $_SESSION['status_message'] = null;
+            $_SESSION['new_page_message'] = null;
         }
     }
     

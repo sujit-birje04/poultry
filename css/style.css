@@ -3485,3 +3485,29 @@ ul.owl-carousel {
     -webkit-border-radius: 4px;
     border-radius: 4px;
 }
+
+
+    .page_info_msg {
+        position: fixed;
+        left: 30%;
+        width: 40%;
+        top: 200px;
+        background: #FFF;
+        z-index: 999;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        color: #FFF;
+    }
+
+    .msg_success{
+        background: #87ba45;
+    }
+    .msg_error{
+        background: #F00;
+    }
+
+    .error {
+        color: #F00;
+        font-size: 12px;
+    }
