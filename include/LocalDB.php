@@ -198,6 +198,111 @@ class LocalDB{
 	}
 
 
+	/***********************************************************************************
+	**** Product related
+	***********************************************************************************/
+	/* This function will be return row in details from the table */
+	public static function getProductDetails($product_alise){
+		$mysqli = self::mysqli_configation();
+		$mainObj = Array();
+		$sql = "SELECT 
+				`product_id`,
+				`name`,
+				`code`,
+				`type`,
+				`price`,
+				`discount`,
+				`is_active`,
+				`image`,
+				`short_description`,
+				`long_description`,
+				`video_link`,
+				`alise`,
+				`alttag`,
+				`created_on`,
+				`updated_on`
+			 FROM `tbl_product` WHERE alise = '$product_alise'";
+		$result = $mysqli->query($sql);
+		if ($result->num_rows > 0) {
+			// output data of each row
+			while($row = $result->fetch_assoc()) {
+				$mainObj = array(
+					
+						'product_id' => $row['product_id'],
+						'name' => $row['name'],
+						'code' => $row['code'],
+						'type' => $row['type'],
+						'price' => $row['price'],
+						'discount' => $row['discount'],
+						'is_active' => $row['is_active'],
+						'image' => $row['image'],
+						'short_description' => $row['short_description'],
+						'long_description' => $row['long_description'],
+						'video_link' => $row['video_link'],
+						'alise' => $row['alise'],
+						'alttag' => $row['alttag'],
+						'created_on' => $row['created_on'],
+						'updated_on' => $row['updated_on']
+					);	
+			}
+		} 	
+		return $mainObj;
+	}
+
+
+	/* This function will be used to return a list of rows from table */
+	public static function listAllProducts(){ 
+		$mysqli = self::mysqli_configation();
+		$mainObj = Array();
+		$sql = "SELECT 
+				`product_id`,
+				`name`,
+				`code`,
+				`type`,
+				`price`,
+				`discount`,
+				`is_active`,
+				`image`,
+				`short_description`,
+				`long_description`,
+				`video_link`,
+				`alise`,
+				`alttag`,
+				`created_on`,
+				`updated_on`
+			 from `tbl_product`;";
+		$result = $mysqli->query($sql);
+		if ($result->num_rows > 0) {
+			// output data of each row
+			$i=0;
+			while($row = $result->fetch_assoc()) {
+				$mainObj[$i] = Array(
+
+						'product_id' => $row['product_id'],
+						'name' => $row['name'],
+						'code' => $row['code'],
+						'type' => $row['type'],
+						'price' => $row['price'],
+						'discount' => $row['discount'],
+						'is_active' => $row['is_active'],
+						'image' => $row['image'],
+						'short_description' => $row['short_description'],
+						'long_description' => $row['long_description'],
+						'video_link' => $row['video_link'],
+						'alise' => $row['alise'],
+						'alttag' => $row['alttag'],
+						'created_on' => $row['created_on'],
+						'updated_on' => $row['updated_on']
+					);	
+
+				$i++;
+			}
+		} 	
+		return $mainObj;
+	}
+
+
+
 }
 
 ?>
