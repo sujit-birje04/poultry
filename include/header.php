@@ -61,7 +61,7 @@
                         <nav class="menu-container">
                             <ul id="menu" class="sm me-menu">
                                 <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="about-us.php">About Us</a></li>
+                                <li><a href="company-profile.php">Company Profile</a></li>
                                 <li><a href="products.php">Products</a>
                                     <ul>
                                         <li><a href="single-product.php">pellet Binder</a></li>

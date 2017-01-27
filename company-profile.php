@@ -10,9 +10,9 @@
             <div class="background-overlay"></div>
             <div class="container centered-container">    
                 <div class="centered-inner-container">
-                    <h1 class="page-title">About Us</h1>
+                    <h1 class="page-title">Eco Nutrivet</h1>
                     <hr class="separator small-separator">
-                    <div class="heading-caption">Meet the Team Behind ZenGarden</div>
+                    <div class="heading-caption">Company Profile</div>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                         <nav class="breadcrumb">
                             <a class="breadcrumb-item" href="#">Home</a>
                             <a class="breadcrumb-item" href="#">Pages</a>
-                            <span class="breadcrumb-item active">About Us</span>
+                            <span class="breadcrumb-item active">Company Profile</span>
                         </nav>                    
                     </div>
                 </div>
@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading-title">
-                        <h3>About <strong class="text-color">ZenGarden</strong></h3>
+                        <h3>About <strong class="text-color">Eco Nutrivet</strong></h3>
                     </div>
                 </div>
 
@@ -46,10 +46,21 @@
 
                 <div class="col-lg-7 col-md-12">
                     <p>
-                        We are Zen Garden, We have many experience in garden services and landscape design, We offer professional services from planting, maintenance and design of your garden. We also provide regular garden maintenance, decoration and landscaping, stone hardscaping, design and planting, garden clearance, watering plants or complete design of your garden.
+                        ECO NUTRIVET is a Global Animal &amp; Poultry Healthcare Management company dedicated to
+                        supporting Customers and their businesses in ever better ways. Building on 20 years of
+                        Industrial &amp; Technology experience, we deliver quality Eco-Friendly Feed Additives, Eco-
+                        Friendly Fly Controllers, Specialty Chemicals &amp; Advanced Hi- Technological Solutions to Poultry
+                        Industry.
                     </p>
                     <p>
-                        Whatever your needs we will be able to satisfy your exact needs. We Also help you to improve your graden wheather you need regular garden maintenance, grass cutting or complete design your garden.
+                        We are working every day to better understand and address the real-world challenges faced by
+                        those who raise and care for animals in ways they find truly relevant.
+                    </p>
+                    <p>
+                        Products and Solutions are complemented by diagnostic tests and supported by a range of services.
+                    </p>
+                    <p>
+                        Our name, ECO NUTRIVET pertaining to Nature - .” It signals our company’s dedication to supporting the livestock producers everywhere who raise and care for the farm and companion animals on which we all depend.
                     </p>
                     <a href="contact.php" class="btn btn-default btn-outline">Get in Touch</a>
                 </div>
@@ -78,6 +89,7 @@
         </div>
     </section>
 
+    <!--
     <section class="section gray-bg border-section">
         <div class="container">
             <div class="row">
@@ -155,7 +167,8 @@
             </div>
         </div>
     </section>
-    
+    -->
+
     <?php include('include/footer.php'); ?>
 
     <?php include('include/footer_script.php'); ?>

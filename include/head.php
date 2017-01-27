@@ -13,7 +13,7 @@
     <meta name="description" content="Foundstrap Studio ZenGarden Template">
     <meta name="author" content="foundstrap.com">
 
-    <title>ZenGarden - Garden and Landscape HTML Template</title>
+    <title>ECO NUTRIVET</title>
 
     <!-- retina bookmark icon -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
