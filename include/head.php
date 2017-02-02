@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/smartmenu.min.css">
     
     <!-- theme stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
     <link rel="stylesheet" href="css/responsive.css">   
 
     <!-- favicon -->

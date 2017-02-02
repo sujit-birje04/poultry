@@ -1,39 +1,34 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-lg-3">
+                <div class="col-md-12 col-lg-5">
                     <div class="footer-logo">
                         <a href="index.html">
                             <img src="img/logo.png" alt="Footer Logo">
                         </a>
                     </div>
-                    <p>Zen Garden is Garden and Landscape Company, provides all you need about Garden and Landscape Design for get better garden decorations.</p>
+                    <p>
+                        ECO NUTRIVET is a Global Animal &amp; Poultry Healthcare Management company dedicated to
+                        supporting Customers and their businesses in ever better ways. Building on 20 years of
+                        Industrial &amp; Technology experience, we deliver quality Eco-Friendly Feed Additives, Eco-
+                        Friendly Fly Controllers, Specialty Chemicals &amp; Advanced Hi- Technological Solutions to Poultry
+                        Industry.
+                    </p>
                 </div>
 
-                <div class="col-md-3 col-lg-2">
-                    <h5 class="footer-title">Quick Links</h5>
-                    <ul class="me-list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Project</a></li>
-                        <li><a href="#">Term &amp; Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-lg-2">
+                <div class="col-md-12 col-lg-2">
                     <h5 class="footer-title">Contact Us</h5>
                     <p>
                         <strong>General Contact :</strong> <br>
-                        <a class="text-color" href="mailto:hello@zengarden.com">hello@zengarden.com</a> <br>
+                        <a class="text-color" href="mailto:hello@zengarden.com">hello@econutrivet.com</a> <br>
                         <strong>Information :</strong> <br>
-                        <a class="text-color" href="mailto:info@zengarden.com">info@zengarden.com</a> 
+                        <a class="text-color" href="mailto:info@zengarden.com">info@econutrivet.com</a> 
                     </p>
                 </div>
 
                 <div class="col-md-12 col-lg-5">
-                    <h5 class="footer-title">Subscribe For Great Promo</h5>
-                    <p>Join with our subscribers and get special price,<br>free garden magazine, promo product announcements and much more!</p>
+                    <h5 class="footer-title">Subscribe For Great Support</h5>
+                    <p>Join with our subscribers and build your business with our knowledge!</p>
 
                     <form class="subscribe-form">
                         <div class="input-group">
@@ -50,7 +45,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="copyright pull-left">&copy; All rights reserved 2016, <strong>Zengarden - Foundstrap Studio</strong> | Envato</div>
+                        <div class="copyright pull-left">&copy; All rights reserved 2016, <strong>Eco-Nutrivet</strong></div>
                         <ul class="footer-social social-icon pull-right">
                             <li><a class="facebook-color" href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a class="twitter-color" href="#"><i class="fa fa-twitter"></i></a></li>

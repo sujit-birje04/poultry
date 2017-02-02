@@ -39,7 +39,7 @@ class ServiceManager{
         $mail_body .= '<p>Fax : '.$input_arr["fax"].'</p>';
         $mail_body .= '<p>Message :</p>';
         $mail_body .= '<p>'.$input_arr["message"].'</p>';
-        $subject = 'Enquiry message';
+        $subject = 'Enquiry : '.$input_arr['subject'];
 
         // send mail
         $status = self::send_email($from_email, $name, $to_email, $subject, $mail_body, $objEmail);

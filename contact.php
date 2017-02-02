@@ -32,12 +32,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <div class="heading-title">
-                        <h3>Get in touch <strong class="text-color">With us</strong></h3>
+                    <div class="map-wrapper no-margin-lg">
+                        <div id="map"></div>
                     </div>
-                    <p>
-                        If you have any question about Zen Garden or how we can help to maintenance your garden, please contact us directly by selecting from one of the below categories that is the most relevant to your inquiry and fill our short feedback form.
-                    </p>
                 </div>
                 <div class="col-lg-8 col-md-12">
                     <form class="contact-form" name="contact_form" id="contact_form" action="controller.php" >
@@ -116,7 +113,7 @@
             </div>
         </div>
     </section>
-
+    <!--
     <div class="section no-padding">
         <div class="container-fluid">
             <div class="row">
@@ -126,7 +123,7 @@
             </div>
         </div>
     </div>
-
+    --> 
     <?php include('include/footer.php'); ?>
 
     <?php include('include/footer_script.php'); ?>

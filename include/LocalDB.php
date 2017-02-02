@@ -21,6 +21,12 @@ class LocalDB{
 		$local_db_password = "Toshiba4757";
 		$local_db_name = "poultry_farm";
 		
+		/*
+		$host_name = "localhost";
+		$local_db_user = "teccrooz_bedmuth";
+		$local_db_password = "nN#fevNsh?vQ";
+		$local_db_name = "teccrooz_econutrivet";
+		*/
 
 		$mysqli = new mysqli($host_name, $local_db_user, $local_db_password, $local_db_name);
 		if ($mysqli->connect_errno) {
@@ -170,6 +176,40 @@ class LocalDB{
 	** BLOG RELATED
 	**********************************************************************/
 
+	/*********************************************************************
+	*** Enqiory
+	**********************************************************************/
+	/* This function will be used to insert new entry in the table */
+	public static function saveEnquiry($id,$name,$email,$address,$city,$country,$zipcode,$phone,$fax,$comment,$product_name){
+		$mysqli = self::mysqli_configation();
+		$mainObj = Array("status"=>false, "msg"=>"Insertion failed, Please try one more time");		 		 
+		$insert_query = "INSERT INTO `enquiries` (`id`,`name`,`email`,`address`,`city`,`country`,`zipcode`,`phone`,`fax`,`comment`,`product_name`,`created_on`) 
+					VALUES('$id','$name','$email','$address','$city','$country','$zipcode','$phone','$fax','$comment','$product_name',now());
+				";
+		$result = $mysqli->query($insert_query); 			
+		$id = $mysqli->insert_id;
+		if($result){			
+			$mainObj["data"] = array(
+						'id' => $id,
+						'name' => $name,
+						'email' => $email,
+						'address' => $address,
+						'city' => $city,
+						'country' => $country,
+						'zipcode' => $zipcode,
+						'phone' => $phone,
+						'fax' => $fax,
+						'product_name' => $product_name,
+						'comment' => $comment,
+						'created_on' => date("Y-m-d h:i:s")
+					);
+			$mainObj['status'] = true;
+			$mainObj['msg'] = 'Inserted successfully';
+		}
+		return $mainObj;
+	}
+
+
 	/********************************************************************
 	** Contact 
 	********************************************************************/
@@ -298,6 +338,48 @@ class LocalDB{
 				$i++;
 			}
 		} 	
+		return $mainObj;
+	}
+
+
+
+	/*************************************************************************
+	** Save Customer
+	*************************************************************************/
+	/* This function will be used to insert new entry in the table */
+	public static function saveCustomer($user_id,$fname,$lname,$email_id,$mobile,$is_active,$sex,$profile_pic,$username,$password,$phone,$comp_apt,$add1,$add2,$city,$state,$country){
+		$mysqli = self::mysqli_configation();
+		$mainObj = Array("status"=>false, "msg"=>"Insertion failed, Please try one more time");		 		 
+		$insert_query = "INSERT INTO `tbl_customer` (`user_id`,`fname`,`lname`,`email_id`,`mobile`,`is_active`,`sex`,`profile_pic`,`username`,`password`,`phone`,`comp_apt`,`add1`,`add2`,`city`,`state`,`country`,`created_on`,`updated_on`) 
+					VALUES('$user_id','$fname','$lname','$email_id','$mobile','$is_active','$sex','$profile_pic','$username','$password','$phone','$comp_apt','$add1','$add2','$city','$state','$country',now(),now());
+				";
+		$result = $mysqli->query($insert_query); 			
+		$user_id = $mysqli->insert_id;
+		if($result){			
+			$mainObj["data"] = array(
+						'user_id' => $user_id,
+						'fname' => $fname,
+						'lname' => $lname,
+						'email_id' => $email_id,
+						'mobile' => $mobile,
+						'is_active' => $is_active,
+						'sex' => $sex,
+						'profile_pic' => $profile_pic,
+						'username' => $username,
+						'password' => $password,
+						'phone' => $phone,
+						'comp_apt' => $comp_apt,
+						'add1' => $add1,
+						'add2' => $add2,
+						'city' => $city,
+						'state' => $state,
+						'country' => $country,
+						'created_on' => date("Y-m-d h:i:s"),
+						'updated_on' => date("Y-m-d h:i:s")
+					);
+			$mainObj['status'] = true;
+			$mainObj['msg'] = 'Inserted successfully';
+		}
 		return $mainObj;
 	}
 

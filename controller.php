@@ -183,12 +183,13 @@
 		$e_link = $next_url."?success=false";
 		$enquiry_id = "";
 		$name = trim($_REQUEST['name']);
+		$subject = trim($_REQUEST['subject']);
 		$email = trim($_REQUEST['email']);
 		$address = trim($_REQUEST['address']);
 		$city = trim($_REQUEST['city']);
 		$country = trim($_REQUEST['country']);
-		$post_code = trim($_REQUEST['post_code']);
-		$phone = trim($_REQUEST['phone']);
+		$post_code = trim($_REQUEST['zip']);
+		$phone = trim($_REQUEST['mobile']);
 		$fax = trim($_REQUEST['fax']);
 		$message = trim($_REQUEST['message']);
 		
@@ -204,10 +205,13 @@
 			$objSession->setObject(json_encode($mailObj), 'new_page_message');
 			die();
 		} else {
-			$email_result = LocalDB::saveEnquiry($enquiry_id,$name,$email,$address,$city,$country,$post_code,$phone,$fax,$message);
+			$email_result = LocalDB::saveEnquiry($enquiry_id,$name,$email,$address,$city,$country,$post_code,$phone,$fax,$message,$subject);
+			$user_id = '';
+			$arr_name = explode(' ', $name);
+			$fname = isset($arr_name[0]) ? $arr_name[0] : $name;
+			$lname = isset($arr_name[1]) ? $arr_name[1] : '';
+			$save_customer = LocalDB::saveCustomer($user_id,$fname,$lname,$email,$phone,'1',0,'',$email,$email,$fax,$address,'',$post_code,$city,'',$country);
 			if($email_result['status'] == true){
-				
-
 				$to = ENQUIRY_EMAIL;
 				//$webDetails = LocalDB::getWebDetails(WEBID);
 				$admin_name = ENQUIRY_NAME;
@@ -220,6 +224,7 @@
 						'country' => $country,
 						'post_code' => $post_code,
 						'fax' => $fax,
+						'subject' => $subject,
 						'message' => $message,
 					);
 
@@ -251,8 +256,6 @@
 		header( 'Location: '.$e_link);
 		die();
 	}
-
-
 	
 
 	if($method == 'save_profile'){

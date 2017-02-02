@@ -50,12 +50,12 @@
         <div class="header-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="height:95px;" >
                         <div class="header-logo">
                             <a href="index.php">
-                                <img src="img/logo-white.png" alt="logo">
-                                <img class="logo-responsive" src="img/logo.png" alt="logo">
-                                <img class="logo-sticky" src="img/logo-black.png" alt="logo">
+                                <img src="img/logo-all.png" alt="logo">
+                                <img class="logo-responsive" src="img/logo-all.png" alt="logo">
+                                <img class="logo-sticky" src="img/logo-all.png" alt="logo">
                             </a>
                         </div>
                         <nav class="menu-container">
@@ -63,16 +63,20 @@
                                 <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="company-profile.php">Company Profile</a></li>
                                 <li><a href="products.php">Products</a>
+                                    <!--
                                     <ul>
-                                        <li><a href="single-product.php">pellet Binder</a></li>
-                                        <li><a href="single-product.php">Toxic Binder</a></li>
-                                        <li><a href="single-product.php">Insectovate</a></li>
+                                        <li><a href="single-product.php?q=p1-pellet-binder">pellet Binder</a></li>
+                                        <li><a href="single-product.php?q=p2-toxic-binder">Toxic Binder</a></li>
+                                        <li><a href="single-product.php?q=p3-insectovat">Insectovate</a></li>
                                     </ul>
+                                    -->
                                 </li>
-                                <li><a href="research-development.php">R & D</a></li>
-                                <li><a href="newsletter.php">Newsletters</a></li>
+                                <li><a href="research-manufacturing.php">RESEARCH & MANUFACTURING</a></li>
+                                <li><a href="knowledge-center.php">KNOWLEDGE CENTER</a></li>
+                                <!--<li><a href="blog.php">Blogs</a></li>-->
+                                <!--
                                 <li><a href="blog.php">Blogs</a></li>
-
+                                -->
                                 <!--
                                 <li><a href="#">Pages</a>
                                     <ul>

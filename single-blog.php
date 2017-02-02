@@ -88,9 +88,9 @@
                         <div class="widget">
                             <div class="promo-box green content-contrast">
                                 <div class="heading-title widget-title">
-                                    <h5>About ZenGarden</h5>
+                                    <h5>About EcoNutrivat</h5>
                                 </div>
-                                <p>Zen Garden is Garden and Landscape Company, provides all you need to know about Garden and Landscape Design to get better garden decorations.</p>
+                                <p>ECO NUTRIVET is a Global Animal & Poultry Healthcare Management company dedicated to supporting Customers and their businesses in ever better ways. Building on 20 years of Industrial & Technology experience, we deliver quality Eco-Friendly Feed Additives, Eco- Friendly Fly Controllers, Specialty Chemicals & Advanced Hi- Technological Solutions to Poultry Industry.</p>
                             </div>
                         </div>
 

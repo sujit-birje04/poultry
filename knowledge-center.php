@@ -9,7 +9,7 @@
             <div class="background-overlay"></div>
             <div class="container centered-container">    
                 <div class="centered-inner-container">
-                    <h1 class="page-title">Newsletter</h1>
+                    <h1 class="page-title">Knowledge Sharing Center</h1>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                     <div class="col-md-12">
                         <nav class="breadcrumb">
                             <a class="breadcrumb-item" href="#">Home</a>
-                            <span class="breadcrumb-item active">Newsletter</span>
+                            <span class="breadcrumb-item active">Knowledge-Center</span>
                         </nav>                    
                     </div>
                 </div>
@@ -30,13 +30,10 @@
     <div class="section">
         <div class="container">
             <div class="row">
-                <div  class="col-md-1">
-                </div>
-                
-                <div class="col-md-10">
+                <div class="col-md-8">
                     <?php
                     include('./include/LocalDB.php');
-                    $blogList = LocalDB::listAllBlogs('2');
+                    $blogList = LocalDB::listAllBlogs('1');
                     foreach ($blogList as $key => $blog) {
                         # code...
                     ?>
@@ -131,7 +128,61 @@
                     <!-- pagination -->
                 </div>
                 
-                <div  class="col-md-1">
+                <div class="col-md-4">
+                    <div class="col-lg-12 col-md-12">
+                        <h5 class="text-color">Tell us your Problem - We will come with Solution</h5>
+                        <form class="contact-form" name="contact_form" id="contact_form" action="controller.php" >
+                            <input type="hidden" name="method" value="save_enquiry" /> 
+                            <input type="hidden" name="next_url" value="knowledge-center.php" /> 
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="name" id="name" class="form-control {required:true}" placeholder="Your name">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="email" name="email" id="email" class="form-control {required:true, email:true}" placeholder="Your Email">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="number" name="mobile" id="mobile" class="form-control {required:true, number:true}" placeholder="Your Mobile">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="address" id="address" class="form-control {required:true}" placeholder="Your Address">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="city" id="city" class="form-control {required:true}" placeholder="Your City">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="country" id="country" class="form-control {required:true}" placeholder="Your Country">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="zip" id="zip" class="form-control" placeholder="Your Zipcode">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" name="fax" id="fax" class="form-control" placeholder="Your Fax">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12"> 
+                                    <div class="form-group">
+                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control {required:true}" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="button" frm_id="contact_form" id="frm_submit" class=" frm_submit btn btn-default btn-block">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="loading"></span>
+                            <div class="success-contact">
+                                <div class="alert alert-success">
+                                    <i class="fa fa-check-circle"></i> Your <strong>Email Send</strong> Thank you.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
                 </div>
             </div>
         </div>
