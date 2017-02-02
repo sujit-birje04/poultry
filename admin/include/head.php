@@ -20,7 +20,7 @@ if(isset($_SESSION["user_data"]) && !empty($_SESSION["user_data"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bedmutha Industries</title>
+    <title>Eco Nutrivet Industries</title>
 
     <!-- Bootstrap core CSS -->
 

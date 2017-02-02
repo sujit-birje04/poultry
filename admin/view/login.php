@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bedmutha Industries </title>
+    <title>Eco Nutrivet</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -54,7 +54,7 @@
             <div id="login" class="animate form">
                 <section class="login_content">
                     <form name="frm_login" id="frm_login" >
-                        <h1>Bedmutha Industries</h1>
+                        <h1>Eco Nutrivet</h1>
                         <div class="form-group alert alert-success frm_error_message" >
                                                                          
                         </div>

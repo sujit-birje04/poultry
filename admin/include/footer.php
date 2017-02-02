@@ -1,7 +1,7 @@
                 <footer>
                     <div class="">
                         <p class="pull-right">Copyright @ 2016
-                            <span class="lead"> <i class="fa fa-paw"></i>Bedmutha</span>
+                            <span class="lead"> <i class="fa fa-paw"></i>Eco-Nutrivet</span>
                         </p>
                     </div>
                     <div class="clearfix"></div>

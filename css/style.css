@@ -1456,6 +1456,7 @@ ul.owl-carousel {
     position: relative;
     overflow: hidden;
 }
+
 .what-we-do-container:before {
     content: "";
     position: absolute;
@@ -1476,6 +1477,7 @@ ul.owl-carousel {
     height: 528px;
     z-index: 2;
 }
+
 .what-we-do-container * {
     position: relative;
     z-index: 5;
