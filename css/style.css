@@ -1001,11 +1001,11 @@ ul.owl-carousel {
     float: left;
 }
 .header-logo img {
-    /*
-    height: 40px;
+    height: 110px;
     width: auto;
-    */
+    /*
     width: 200px !important;
+    */
 }
 .header-logo .logo-responsive,
 .header-logo .logo-sticky {
