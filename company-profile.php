@@ -67,6 +67,7 @@
                 <div class="col-md-12">
                     <hr class="separator">
                 </div>
+                <!--
                 <div class="col-md-12">
                     <ul class="grid-lg-2 grid-md-2 equal-height no-wrap">
                         <li>
@@ -85,6 +86,7 @@
                         </li>
                     </ul>
                 </div>
+                -->
             </div>
         </div>
     </section>

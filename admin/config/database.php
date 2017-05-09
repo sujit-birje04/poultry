@@ -4,9 +4,9 @@ class Configuration{
 	public static function mysqli_configation(){
 		/*
 		$host_name = "localhost";
-		$local_db_user = "teccrooz_bedmuth";
-		$local_db_password = "nN#fevNsh?vQ";
-		$local_db_name = "teccrooz_econutrivet";
+		$local_db_user = "ovcywrzo_econutrivet";
+		$local_db_password = "sujit@123";
+		$local_db_name = "ovcywrzo_econutrivet";
 		*/
 		$host_name = "localhost";
 		$local_db_user = "ecotechz_multisi";

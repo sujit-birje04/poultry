@@ -218,8 +218,8 @@
                             <h5 class="text-color">Office Address :</h5>
                             <div class="contact-info">
                                 <p>
-                                    2158 Madison Avenue <br>
-                                    Montgomery, AL(Alabama) 36107
+                                    Katraj, Pune <br>
+                                    Maharashtra, India.
                                 </p>
                             </div>
 

@@ -11,9 +11,9 @@ class LocalDB{
 		$local_db_name = "multi_website";
 		
 		$host_name = "localhost";
-		$local_db_user = "darbarwe_multi";
-		$local_db_password = "Toshiba4757";
-		$local_db_name = "darbarwe_multi";
+		$local_db_user = "ovcywrzo_econutrivet";
+		$local_db_password = "sujit@123";
+		$local_db_name = "ovcywrzo_econutrivet";
 		*/
 			
 		$host_name = "localhost";

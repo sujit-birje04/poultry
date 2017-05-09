@@ -70,6 +70,7 @@
                     </form>
                 </div>
             </div>
+            <!--
             <div class="row">
                 <div class="col-md-12">
                     <hr class="separator">
@@ -111,6 +112,7 @@
                     </div>
                 </div>
             </div>
+            -->
         </div>
     </section>
     <!--

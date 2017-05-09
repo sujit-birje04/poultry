@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="header-info pull-left">
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> Phone: +62 856-4561-3576</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> Phone: +91 83 79 837903</li>
                             <li><a href="mailto:hello@zengarden.com"><i class="fa fa-envelope" aria-hidden="true"></i> hello@econutrivet.com</a></li>
                             <li><i class="fa fa-clock-o" aria-hidden="true"></i> Mon-Fri: 7:00 - 18:00</li>
                         </ul>
